@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <title>Game Of Life</title>
+    </head>
+    <body>
+        <main class="main">
+            <canvas id="gameCanvas"></canvas>
+            <div class="settings">
+                <div class="setting">
+                    <span>Width:</span>
+                    <input class="inp" type="number" id="widthInput" value="80" />
+                </div>
+                <div class="setting">
+                    <span>Height:</span>
+                    <input class="inp" type="number" id="heightInput" value="80" />
+                </div>
+                <div class="setting">
+                    <span>Chance on each cell(%):</span>
+                    <input class="inp" type="number" id="cellChance" value="50" min="1" max="100" />
+                </div>
+                <div class="setting">
+                    <span>Generation Time:</span>
+                    <span id="timeUpdate">0 ms</span>
+                </div>
+            </div>
+            <div class="settings">
+                <button class="btn" id="changeGridBtn">Change grid</button>
+                <button class="btn" id="randomBtn">Random</button>
+                <button class="btn" id="startBtn">Start</button>
+                <button class="btn" id="stopBtn">Stop</button>
+                <button class="btn" id="resetBtn">Reset</button>
+            </div>
+        </main>
+
+        <script type="module" src="/index.js"></script>
+    </body>
+</html>
